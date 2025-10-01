@@ -4,7 +4,6 @@
     { "src": "api/latency_metrics.py", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/api/latency", "methods": ["POST"], "dest": "api/latency_metrics.py" }
+    { "src": "/api/latency_metrics", "methods": ["POST"], "dest": "api/latency_metrics.py" }
   ]
 }
-
