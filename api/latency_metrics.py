@@ -274,7 +274,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.post("/latency_metrics")
+@app.post("/latency")
 def get_latency_metrics(body: RequestBody):
     result = {}
     for region in body.regions:
@@ -291,3 +291,4 @@ def get_latency_metrics(body: RequestBody):
             "breaches": breaches
         }
     return result
+
